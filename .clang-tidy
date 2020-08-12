@@ -1,0 +1,16 @@
+Checks: 'readability*,cppcoreguidelines*,modernize*,-modernize-use-trailing-return-type,-readability-uppercase-literal-suffix'
+WarningsAsErrors: 'readability*,cppcoreguidelines*,modernize*,-cppcoreguidelines-pro-bounds-constant-array-index,-modernize-use-trailing-return-type'
+HeaderFilterRegex: ".*"
+CheckOptions:
+  - key:        readability-function-size.LineThreshold
+    value:      '40'
+  - key:        cppcoreguidelines-pro-bounds-constant-array-index.GslHeader
+    value:      'gsl/gsl'
+  - key:        cppcoreguidelines-avoid-magic-numbers.IgnorePowersOf2IntegerValues
+    value:      'true'
+  - key:        cppcoreguidelines-avoid-magic-numbers.IgnoreAllFloatingPointValues
+    value:      'true'
+  - key:        cppcoreguidelines-avoid-magic-numbers.IgnoredIntegerValues
+    value:      '1;2;3;4;5;6;7;8;9;10;'
+  - key:        readability-magic-numbers.IgnoredIntegerValues
+    value:      '1;2;3;4;5;6;7;8;9;10;'

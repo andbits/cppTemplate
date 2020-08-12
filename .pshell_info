@@ -1,0 +1,5 @@
+[main]
+SCM = git
+TAB_SETTINGS = space,4
+BUILDAPP = build.cmd
+RUNAPP = .virtualenv\Scripts\python.exe re\deployer.py --launch vr --noTest --capture socket
